@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/insurance
+    username: root
+    password: Vita0705
+    testWhileIdle: true
+    validationQuery: SELECT 1
+  cors:
+    allowed-origins: "*"
+    allowed-methods: "GET, POST, OPTIONS, PUT, DELETE"
+    allowed-headers: "Origin, Content-Type, Accept, Authorization"
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+#      ddl-auto: create-drop
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+  mvc:
+    servlet:
+      path: /api/v1
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false

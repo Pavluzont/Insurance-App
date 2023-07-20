@@ -1,0 +1,1519 @@
+{
+	"info": {
+		"_postman_id": "489db55c-5e59-46dd-8805-240c86d87455",
+		"name": "Insurance app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27094071"
+	},
+	"item": [
+		{
+			"name": "Owner",
+			"item": [
+				{
+					"name": "Get Owners",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/owners",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"owners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Owner by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/owners/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"owners",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save owner",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/owners",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"owners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update owner",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/owners",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"owners"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete owner by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/owners/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"owners",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contract",
+			"item": [
+				{
+					"name": "Get contracts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/contracts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get contracts by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/contracts/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contracts",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save contract",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/contracts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update contract",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/contracts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contracts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete owner by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/contracts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"contracts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Claim",
+			"item": [
+				{
+					"name": "Get claims",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/claims",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"claims"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get claim by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/claims/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"claims",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get claims by object ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/claims/objects/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"claims",
+								"objects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save claim",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/claims",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"claims"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update claim",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/claims",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"claims"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete claim by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/claims/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"claims",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Plan",
+			"item": [
+				{
+					"name": "Get plans",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/plans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"plans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get plans by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/plans/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"plans",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get plans by company ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/plans/companies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"plans",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save plan",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/plans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"plans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update plan",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/plans",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"plans"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete plan by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/plans/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"plans",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Photo",
+			"item": [
+				{
+					"name": "Get photos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get photo by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/photos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get photos by document ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/photos/documents/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photos",
+								"documents",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save photo",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update photo",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete photo by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/photos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Document",
+			"item": [
+				{
+					"name": "Get documents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/documents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get documents by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/documents/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"documents",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get documents by object ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/documents/objects/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"documents",
+								"objects",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save document",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/documents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update document",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/document",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"document"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete document by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/photos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"photos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consultant",
+			"item": [
+				{
+					"name": "Get consultants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/consultants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"consultants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get consultant by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/owners/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"owners",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get consultant by company ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/consultants/companies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"consultants",
+								"companies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save consultant",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/consultants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"consultants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update consultant",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"New\",\r\n        \"lastName\": \"New\",\r\n        \"email\": \"lesl@luv2code.com\",\r\n        \"age\": 28,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\":\"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/consultants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"consultants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete consultant by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/consultants/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"consultants",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Insurance company",
+			"item": [
+				{
+					"name": "Get companies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get company by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/companies/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save company",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"Kupala\",\r\n        \"address\": {\r\n            \"country\": \"Belarus\",\r\n            \"state\":\"Gomel\",\r\n            \"city\": \"Gomel\",\r\n            \"street\": \"Lenina\",\r\n            \"homeNum\": \"2\",\r\n            \"postCode\": \"24000\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/companies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save company Copy",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"id\": 3,\r\n        \"createdDateTime\": \"2023-05-22T13:21:30.472051\",\r\n        \"name\": \"BGS\",\r\n        \"address\": {\r\n            \"country\": \"Belarus\",\r\n            \"state\": \"Brest\",\r\n            \"city\": \"Brest\",\r\n            \"street\": \"Pobeda\",\r\n            \"homeNum\": \"15\",\r\n            \"postCode\": \"24000\"\r\n        },\r\n        \"consultants\": [],\r\n        \"plans\": []\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/companies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete company by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/owners/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"owners",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "Get cars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/objects",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"objects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get car by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cars/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save car",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"BMW\",\r\n        \"model\": \"x6\",\r\n        \"insuranceCompany\":     {\r\n        \"id\": 3,\r\n        \"createdDateTime\": \"2023-05-21T15:37:18.210169\",\r\n        \"modifiedDateTime\": \"2023-05-21T15:37:18.210169\",\r\n        \"name\": \"Kupala\",\r\n        \"address\": {\r\n            \"country\": \"Belarus\",\r\n            \"state\": \"Gomel\",\r\n            \"city\": \"Gomel\",\r\n            \"street\": \"Lenina\",\r\n            \"homeNum\": \"2\",\r\n            \"postCode\": \"24000\"\r\n        },\r\n        \"consultants\": [],\r\n        \"plans\": []\r\n    },\r\n        \"owner\":{\r\n        \"id\": 1,\r\n        \"createdDateTime\": \"2023-05-19T07:39:49.971419\",\r\n        \"modifiedDateTime\": \"2023-05-19T07:39:49.971419\",\r\n        \"firstName\": \"Test1\",\r\n        \"lastName\": \"Test1\",\r\n        \"email\": \"delete@luv2code.com\",\r\n        \"password\": null,\r\n        \"age\": 25,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\": \"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        },\r\n        \"insuranceObjects\": []\r\n    }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update  car",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "susan",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "fun123",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \"id\": 2,\r\n    \"createdDateTime\": \"2023-05-22T11:16:57.4629018\",\r\n    \"modifiedDateTime\": \"2023-05-22T11:16:57.4639026\",\r\n    \"name\": \"BMW\",\r\n    \"model\": \"x1\",\r\n    \"insuranceCompany\":     {\r\n        \"id\": 1,\r\n        \"createdDateTime\": \"2023-05-22T10:29:09.405116\",\r\n        \"modifiedDateTime\": \"2023-05-22T10:29:09.405116\",\r\n        \"name\": \"Kupala\",\r\n        \"address\": {\r\n            \"country\": \"Belarus\",\r\n            \"state\": \"Gomel\",\r\n            \"city\": \"Gomel\",\r\n            \"street\": \"Lenina\",\r\n            \"homeNum\": \"2\",\r\n            \"postCode\": \"24000\"\r\n        },\r\n        \"consultants\": [],\r\n        \"plans\": []\r\n    },\r\n    \"owner\":     {\r\n        \"id\": 2,\r\n        \"createdDateTime\": \"2023-05-22T10:32:24.195828\",\r\n        \"modifiedDateTime\": \"2023-05-22T10:32:24.195828\",\r\n        \"firstName\": \"Test2\",\r\n        \"lastName\": \"Test2\",\r\n        \"email\": \"test2@test.com\",\r\n        \"password\": null,\r\n        \"age\": 25,\r\n        \"gender\": \"MALE\",\r\n        \"phoneNumber\": \"123-153-456\",\r\n        \"address\": {\r\n            \"country\": \"USA\",\r\n            \"state\": \"CA\",\r\n            \"city\": \"NY\",\r\n            \"street\": \"Street\",\r\n            \"homeNum\": \"4a\",\r\n            \"postCode\": \"15-352\"\r\n        },\r\n        \"insuranceObjects\": []\r\n    },\r\n    \"contract\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete car by ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cars/50",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"cars",
+								"50"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
